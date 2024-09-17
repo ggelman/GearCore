@@ -1,0 +1,10 @@
+@import url(styles.css);
+@import url(quemSomos.css);
+@import url(dif.css);
+@import url(socio.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
