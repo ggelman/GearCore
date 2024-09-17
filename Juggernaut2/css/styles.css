@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-light: #ffffff;
+    --color-shadow: #4d4d4d;
+    --color-gear: #ffbb00;
+    --fonte-principal: "Roboto", sans-serif;
+    --fonte-peso: 400;
+    --size-titulo: 3rem;
+    --size-subtitulo: 30px;
+    --text-default: 20px;
+}
+
+.navbar {
+    background-color: #000000;
+    height: 4rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.navbar-toggler {
+    position: absolute;
+    right: 1.5rem;
+    top: 2rem;
+}
+
+.navbar-collapse {
+    width: 100%;
+    background-color: #000000;
+}
+
+.navbar-brand img {
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.nav-link {
+    color: #ffffff;
+    margin: 1rem;
+}
+
+.nav-link:hover {
+    color: var(--color-gear);
+}
+
+.container-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+        url(../images/technology-futuristic-bg.avif);
+    height: calc(100vh - 3.5rem);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-light);
+}
+
+.banner-titulo {
+    font-size: var(--size-titulo);
+    text-align: center;
+}
+
+.titulo {
+    color: var(--color-gear);
+    font-weight: 500;
+}
+
+.banner-subtitulo {
+    font-size: var(--size-subtitulo);
+    font-weight: var(--fonte-peso);
+    max-width: 60%;
+    text-align: center;
+}
+
+.sobre-projeto {
+    display: flex;
+    justify-content: space-between;
+}
+
+.descricao {
+    /* max-width: 50%; */
+    padding: 2em;
+}
+
+.descricao-titulo {
+    font-size: var(--size-titulo);
+    color: var(--color-gear);
+}
+
+.descricao-texto {
+    font-size: var(--text-default);
+    margin-top: 1em;
+}
+
+.sobre-video {
+    padding: 0;
+    /* width: 40%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background-color: var(--color-gear);
+}
+
+.video {
+    max-height: 90%;
+    border-radius: 20px;
+}
+
+.galeria {
+    padding: 1.5em 2em;
+    background-color: #0b0035;
+    height: 90%;
+    width: 100%;
+}
+
+.galeria-titulo {
+    color: var(--color-light);
+    font-size: var(--size-titulo);
+    margin-bottom: 1em;
+}
+
+.carrossel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel,
+.slide {
+    width: 30%;
+}
+
+.carousel-item img {
+    max-width: 100%;
+}
+
+.container-arma {
+    /* height: 100vh; */
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.descricao-arma {
+    width: 40%;
+}
+
+.arma-titulo {
+    font-size: var(--size-titulo);
+}
+
+.arma-subtitulo {
+    font-size: 24px;
+    color: var(--color-gear);
+    margin: 1em 0;
+}
+
+.arma-descricao {
+    font-size: var(--fonte-principal);
+    font-weight: 500;
+}
+
+.arma-cards {
+    width: 50%;
+}
+
+.card {
+    border: 1px solid #a8a8a8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.card img {
+    border-radius: 10px;
+}
+
+.container-hardware {
+    padding: 2rem;
+}
+
+.container-hardware {
+    background-color: #0b0035;
+}
+
+.hardware-titulo {
+    font-size: var(--size-titulo);
+    padding: 1rem;
+    color: var(--color-light);
+}
+
+.accordion-button {
+    font-weight: 600;
+}
+
+@media (max-width: 1122px) {
+    .video {
+        width: 60%;
+    }
+}
+
+@media (max-width: 991px) {
+    .descricao-arma {
+        width: 100%;
+    }
+    .arma-cards {
+        width: 100%;
+    }
+    .carousel,
+    .slide {
+        width: 60%;
+    }
+    .galeria {
+        height: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .sobre-video {
+        width: 100%;
+    }
+}
